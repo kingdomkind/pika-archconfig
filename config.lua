@@ -1,0 +1,92 @@
+Packages = {
+    Official = {
+	    --> Required applications
+        "base",
+        "base-devel",
+        "git",
+        "grub",
+        "linux",
+        "linux-firmware",
+        "networkmanager",
+        "openssh",
+        "amd-ucode",
+        "gst-plugin-pipewire",
+        "efibootmgr",
+        "libpulse",
+        "pipewire",
+        "pipewire-alsa",
+        "pipewire-jack",
+        "pipewire-pulse",
+        "wireplumber",
+        "linux-headers",
+        "dnsmasq",
+        "wl-clipboard",
+        "libvirt",
+        "qemu-full",
+        "nvidia-open-dkms",
+
+        --> Apps
+        "nano",
+        "rustup",
+        "ttf-jetbrains-mono-nerd",
+        "flatpak",
+        "fastfetch",
+        "hyprland",
+        "kitty",
+        "nautilus",
+        "hyprpaper",
+        "python-pywal",
+        "dunst",
+        "waybar",
+        "signal-desktop",
+        "rofi-wayland",
+        "grim",
+        "slurp",
+        "btop",
+        "virt-manager",
+        "nwg-look",
+	"element-desktop",
+	"noto-fonts-emoji",
+    },
+
+    Aur = {
+        "vesktop-bin",
+        "nvm",
+        "vscodium",
+        "looking-glass",
+        "librewolf-bin",
+        "rofi-power-menu",
+        "zapzap",
+	"satty-bin",
+        "prismlauncher-qt5-bin",
+        "freetube-bin",
+	"betterbird-bin",
+	--"adwaita-qt5-git",
+	--"adwaita-qt6-git",
+    },
+
+    Flatpak = {
+        "com.bitwarden.desktop",
+        "com.github.IsmaelMartinez.teams_for_linux",
+    },
+}
+
+Symlinks = {
+    ["/home/pika/.config/hypr/hyprland.conf"] = "/home/pika/Config/hyprland.conf",
+    ["/etc/default/grub"] = "/home/pika/Config/boot/grub",
+    ["/home/pika/.config/wal/templates/colors-hyprland.conf"] = "/home/pika/Config/scripts/wallpaper/colors-hyprland.conf",
+    ["/home/pika/.config/kitty/kitty.conf"] = "/home/pika/Config/scripts/kitty/kitty.conf",
+    ["/home/pika/.config/rofi/config.rasi"] = "/home/pika/Config/scripts/rofi/config.rasi",
+    ["/home/pika/.config/wal/templates/dunstrc"] = "/home/pika/Config/scripts/dunst/dunstrc",
+    ["/home/pika/.config/waybar/config"] = "/home/pika/Config/scripts/waybar/config",
+    ["/home/pika/.config/waybar/style.css"] = "/home/pika/Config/scripts/waybar/style.css",
+    ["/etc/mkinitcpio.conf"] = "/home/pika/Config/boot/mkinitcpio.conf",
+    ["/etc/fstab"] = "/home/pika/Config/boot/fstab",
+    ["/etc/tmpfiles.d/10-looking-glass.conf"] = "/home/pika/Config/boot/10-looking-glass.conf",
+    ["/home/pika/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
+}
+
+InstallLocations = {
+    ["Save"] = "/home/pika/.config-king/save.king",
+    ["Aur"] = "/home/pika/.config-king/aur/"
+}

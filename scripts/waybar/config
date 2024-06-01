@@ -1,0 +1,63 @@
+[
+  {
+    "clock": {
+      "format": "{:%H:%M:%S %a}",
+      "interval": 1,
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/nvidia": {
+      "exec": "/home/pika/Config/scripts/stats/nvidia.sh",
+      "format": "{}",
+      "restart-interval": 1
+    },
+    "custom/system": {
+      "exec": "/home/pika/Config/scripts/stats/system.sh",
+      "format": "{}",
+      "restart-interval": 1
+    },
+    "height": 20,
+    "hyprland/window": {
+      "format": "{class}"
+    },
+    "hyprland/workspaces": {
+      "active-only": false,
+      "all-outputs": true,
+      "format": "{}",
+      "format-icons": {
+        "active": "",
+        "default": "",
+        "urgent": ""
+      },
+      "on-click": "activate",
+      "persistent-workspaces": {
+        "*": 5
+      }
+    },
+    "layer": "top",
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
+    "margin-top": 10,
+    "modules-center": [],
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "tray",
+      "custom/system",
+      "custom/nvidia",
+      "network",
+      "clock"
+    ],
+    "network": {
+      "format-disconnected": "Disconnected",
+      "format-ethernet": " ",
+      "format-wifi": "  {signalStrength}%"
+    },
+    "tray": {
+      "icon-size": 17,
+      "spacing": 10
+    }
+  }
+]

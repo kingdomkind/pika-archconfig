@@ -1,0 +1,32 @@
+@import "/home/pika/.cache/wal/colors-waybar.css";      
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#tray,
+#network,
+#window,
+#workspaces,
+#custom-system,
+#custom-nvidia,
+#clock {
+  background-color: @background;
+  margin-left: 5px;
+  margin-right: 5px;;
+  border: 2px solid @color11;
+  padding: 2px 15px;
+  color: #ffffff;
+}
+
+#workspaces button:hover {
+  background: @color11;
+  border: 0px;
+}
