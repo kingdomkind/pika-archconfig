@@ -48,6 +48,9 @@ Packages = {
 	"element-desktop",
 	"noto-fonts-emoji",
 	"gparted",
+	"steam",
+	"koko",
+	"vlc",
     },
 
     Aur = {

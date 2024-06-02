@@ -3,6 +3,7 @@
 
 if [ "$XDG_CURRENT_DESKTOP" == "Hyprland" ]; then
 	SCRIPT_DIRECTORY="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+	echo "Script is located in: $SCRIPT_DIRECTORY"
 	WALLPAPER_FILE="$SCRIPT_DIRECTORY/wallpaper.txt"
 	DIRECTORY="$SCRIPT_DIRECTORY/pictures"
   
@@ -16,7 +17,7 @@ if [ "$XDG_CURRENT_DESKTOP" == "Hyprland" ]; then
 			break
 		fi
 	done
-	echo "$WALLPAPER" > wallpaper.txt
+	echo "$WALLPAPER" > "$WALLPAPER_FILE"
 
 	FINAL="$SCRIPT_DIRECTORY/pictures/$WALLPAPER"
 	wal -i "$FINAL"
