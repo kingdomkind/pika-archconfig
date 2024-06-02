@@ -47,6 +47,7 @@ Packages = {
         "nwg-look",
 	"element-desktop",
 	"noto-fonts-emoji",
+	"gparted",
     },
 
     Aur = {
