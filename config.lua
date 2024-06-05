@@ -26,7 +26,6 @@ Packages = {
         "nvidia-open-dkms",
 
         --> Apps
-        "nano",
         "rustup",
         "ttf-jetbrains-mono-nerd",
         "flatpak",
@@ -51,6 +50,7 @@ Packages = {
 	"steam",
 	"koko",
 	"vlc",
+	"vim",
     },
 
     Aur = {
@@ -65,8 +65,6 @@ Packages = {
         "prismlauncher-qt5-bin",
         "freetube-bin",
 	"betterbird-bin",
-	--"adwaita-qt5-git",
-	--"adwaita-qt6-git",
     },
 
     Flatpak = {
