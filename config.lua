@@ -23,7 +23,7 @@ Packages = {
         "wl-clipboard",
         "libvirt",
         "qemu-full",
-        "nvidia-open-dkms",
+        --"nvidia-open-dkms",
 
         --> Apps
         "rustup",
@@ -65,6 +65,8 @@ Packages = {
         "prismlauncher-qt5-bin",
         "freetube-bin",
 	"betterbird-bin",
+	{"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"},
+	{"nvidia-open-beta"}
     },
 
     Flatpak = {
