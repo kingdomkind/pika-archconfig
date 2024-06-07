@@ -51,6 +51,7 @@ Packages = {
 	"koko",
 	"vlc",
 	"vim",
+	"ttf-font-awesome",
     },
 
     Aur = {
