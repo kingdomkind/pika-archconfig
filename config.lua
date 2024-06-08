@@ -1,6 +1,6 @@
 Packages = {
     Official = {
-	    --> Required applications
+	--> Required applications
         "base",
         "base-devel",
         "git",
@@ -23,7 +23,6 @@ Packages = {
         "wl-clipboard",
         "libvirt",
         "qemu-full",
-        --"nvidia-open-dkms",
 
         --> Apps
         "rustup",
@@ -43,7 +42,6 @@ Packages = {
         "slurp",
         "btop",
         "virt-manager",
-        "nwg-look",
 	"element-desktop",
 	"noto-fonts-emoji",
 	"gparted",
@@ -52,6 +50,8 @@ Packages = {
 	"vlc",
 	"vim",
 	"ttf-font-awesome",
+	"torbrowser-launcher",
+	"qbittorrent",
     },
 
     Aur = {
@@ -66,9 +66,11 @@ Packages = {
         "prismlauncher-qt5-bin",
         "freetube-bin",
 	"betterbird-bin",
-	{"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"},
-	{"nvidia-open-beta"}
+	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
+	{["base"] = "nvidia-open-beta", ["sub"] = {"nvidia-open-beta-dkms"}},
+	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
     },
+
 
     Flatpak = {
         "com.bitwarden.desktop",
