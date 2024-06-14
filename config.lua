@@ -54,6 +54,7 @@ Packages = {
     },
 
     Aur = {
+	--> Simple AUR
         "vesktop-bin",
         "nvm",
         "vscodium",
@@ -68,6 +69,8 @@ Packages = {
 	"pop-icon-theme-git",
 	"cosmic-files-git",
 	"cosmic-icons-git",
+
+	--> Advanced AUR
 	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
 	{["base"] = "nvidia-open-beta", ["sub"] = {"nvidia-open-beta-dkms"}},
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
@@ -99,3 +102,29 @@ InstallLocations = {
     ["Base"] = "/home/pika/.config-king/",
     ["Aur"] = "/home/pika/.config-king/aur/"
 }
+
+function HookPost()
+
+	--> Ensure that the default network is running & auto-started
+	local Handle = io.popen("sudo virsh net-list --all | grep default | awk '{gsub(/ +/, \",\"); print}' | sed 's/^,//'")
+	local Result = Handle:read("*a")
+	Handle:close()
+
+	local Status = {}
+
+	for Value in Result:gmatch("[^,]+") do
+		table.insert(Status, Value)
+	end
+
+	if Status[1] ~= nil then
+		if Status[2] ~= "active" then
+			os.execute("sudo virsh net-start default")
+		end
+
+		if Status[3] ~= "yes" then
+			os.execute("sudo virsh net-autostart default")
+		end
+	else
+		print("Failed to grep any results for default! (virsh network)")
+	end
+end
