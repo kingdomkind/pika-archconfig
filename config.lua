@@ -23,15 +23,15 @@ Packages = {
         "wl-clipboard",
         "libvirt",
         "qemu-full",
+	"ntfs-3g",
+	"noto-fonts",
 
         --> Apps
         "rustup",
-        "ttf-jetbrains-mono-nerd",
         "flatpak",
         "fastfetch",
         "hyprland",
         "kitty",
-        "nautilus",
         "hyprpaper",
         "python-pywal",
         "dunst",
@@ -43,15 +43,14 @@ Packages = {
         "btop",
         "virt-manager",
 	"element-desktop",
-	"noto-fonts-emoji",
 	"gparted",
 	"steam",
 	"koko",
 	"vlc",
 	"vim",
-	"ttf-font-awesome",
 	"torbrowser-launcher",
 	"qbittorrent",
+	"vi",
     },
 
     Aur = {
@@ -66,6 +65,9 @@ Packages = {
         "prismlauncher-qt5-bin",
         "freetube-bin",
 	"betterbird-bin",
+	"pop-icon-theme-git",
+	"cosmic-files-git",
+	"cosmic-icons-git",
 	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
 	{["base"] = "nvidia-open-beta", ["sub"] = {"nvidia-open-beta-dkms"}},
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
@@ -94,6 +96,6 @@ Symlinks = {
 }
 
 InstallLocations = {
-    ["Save"] = "/home/pika/.config-king/save.king",
+    ["Base"] = "/home/pika/.config-king/",
     ["Aur"] = "/home/pika/.config-king/aur/"
 }

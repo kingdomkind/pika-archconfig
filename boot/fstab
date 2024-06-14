@@ -8,5 +8,11 @@ UUID=584fbeda-8cd4-4fd1-83f3-62c914c597b4	/         	ext4      	rw,relatime	0 1
 # /dev/nvme0n1p1
 UUID=2261-89BF      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
-# /dev/sda1
+# /dev/sdb1
 UUID=24fdc1e6-511e-4eda-a7ab-59a396f21b7d	/mnt/ssd	ext4	defaults,nofail	0	0
+
+# /dev/sdc3
+UUID=607A61D37A61A70E	/mnt/hdd	ntfs	defaults,nofail	0	0
+
+# /dev/sda1
+UUID=7a952cb0-00f4-445a-8307-526454823681	/mnt/hdd2	ext4	defaults,nofail	0	0
