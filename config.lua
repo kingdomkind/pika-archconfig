@@ -25,6 +25,7 @@ Packages = {
         "qemu-full",
 	"ntfs-3g",
 	"noto-fonts",
+	"ttf-font-awesome",
 
         --> Apps
         "rustup",
@@ -69,6 +70,7 @@ Packages = {
 	"pop-icon-theme-git",
 	"cosmic-files-git",
 	"cosmic-icons-git",
+	"jellyfin-media-player",
 
 	--> Advanced AUR
 	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
@@ -80,6 +82,7 @@ Packages = {
     Flatpak = {
         "com.bitwarden.desktop",
         "com.github.IsmaelMartinez.teams_for_linux",
+	"org.jellyfin.JellyfinServer",
     },
 }
 
@@ -96,6 +99,7 @@ Symlinks = {
     ["/etc/fstab"] = "/home/pika/Config/boot/fstab",
     ["/etc/tmpfiles.d/10-looking-glass.conf"] = "/home/pika/Config/boot/10-looking-glass.conf",
     ["/home/pika/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
+    ["/usr/share/grub/themes/sleek"] = "/home/pika/Config/boot/sleek",
 }
 
 InstallLocations = {
