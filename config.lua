@@ -26,7 +26,8 @@ Packages = {
 	"ntfs-3g",
 	"noto-fonts",
 	"ttf-font-awesome",
-
+	"ttf-jetbrains-mono-nerd",
+	
         --> Apps
         "rustup",
         "flatpak",
@@ -44,14 +45,11 @@ Packages = {
         "btop",
         "virt-manager",
 	"element-desktop",
-	"gparted",
 	"steam",
 	"koko",
 	"vlc",
-	"vim",
-	"torbrowser-launcher",
 	"qbittorrent",
-	"vi",
+	"neovim",
     },
 
     Aur = {
@@ -80,7 +78,6 @@ Packages = {
 
 
     Flatpak = {
-        "com.bitwarden.desktop",
         "com.github.IsmaelMartinez.teams_for_linux",
 	"org.jellyfin.JellyfinServer",
     },
@@ -95,6 +92,7 @@ Symlinks = {
     ["/home/pika/.config/wal/templates/dunstrc"] = "/home/pika/Config/scripts/dunst/dunstrc",
     ["/home/pika/.config/waybar/config"] = "/home/pika/Config/scripts/waybar/config",
     ["/home/pika/.config/waybar/style.css"] = "/home/pika/Config/scripts/waybar/style.css",
+    ["/home/pika/.config/nvim"] = "/home/pika/Config/neovim",
     ["/etc/mkinitcpio.conf"] = "/home/pika/Config/boot/mkinitcpio.conf",
     ["/etc/fstab"] = "/home/pika/Config/boot/fstab",
     ["/etc/tmpfiles.d/10-looking-glass.conf"] = "/home/pika/Config/boot/10-looking-glass.conf",
