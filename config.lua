@@ -50,24 +50,23 @@ Packages = {
 	"vlc",
 	"qbittorrent",
 	"neovim",
+	"nvtop",
     },
 
     Aur = {
 	--> Simple AUR
-        "vesktop-bin",
-        "nvm",
-        "vscodium",
+	"armcord-bin",
+        "nvm", "vscodium",
         "looking-glass",
         "librewolf-bin",
         "rofi-power-menu",
         "zapzap",
 	"satty-bin",
+	"hyprpicker",
         "prismlauncher-qt5-bin",
         "freetube-bin",
 	"betterbird-bin",
-	"pop-icon-theme-git",
-	"cosmic-files-git",
-	"cosmic-icons-git",
+	"pop-icon-theme-git", "cosmic-icons-git", "cosmic-files-git",
 	"jellyfin-media-player",
 
 	--> Advanced AUR

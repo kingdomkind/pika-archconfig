@@ -1,1 +1,27 @@
+/* pywal automatically generates colors-rofi-dark.rasi */
 @import "/home/pika/.cache/wal/colors-rofi-dark"
+
+/* Set background transparency */
+* {
+	background: rgba(0, 0, 0, 70%);
+	background-color: rgba(0, 0, 0, 0%);
+}
+
+/* Configure Settings */
+configuration {
+	show-icons: true;
+}
+
+/* Configure background window */
+window {
+	border-radius: 15px;
+	height: 50%;
+}
+
+/* Remove the black box behind each element in the list */
+element.normal.normal {
+	background-color: transparent;
+}
+element.alternate.normal {
+	background-color: transparent;
+}
