@@ -92,10 +92,12 @@ Symlinks = {
     ["/home/pika/.config/waybar/config"] = "/home/pika/Config/scripts/waybar/config",
     ["/home/pika/.config/waybar/style.css"] = "/home/pika/Config/scripts/waybar/style.css",
     ["/home/pika/.config/nvim"] = "/home/pika/Config/neovim",
+    ["/root/.config/nvim"] = "/home/pika/Config/neovim",
     ["/etc/mkinitcpio.conf"] = "/home/pika/Config/boot/mkinitcpio.conf",
     ["/etc/fstab"] = "/home/pika/Config/boot/fstab",
     ["/etc/tmpfiles.d/10-looking-glass.conf"] = "/home/pika/Config/boot/10-looking-glass.conf",
     ["/home/pika/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
+    ["/root/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
     ["/usr/share/grub/themes/sleek"] = "/home/pika/Config/boot/sleek",
 }
 

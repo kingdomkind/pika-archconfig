@@ -11,3 +11,5 @@ PS1='[\u@\h \W]\$ '
 alias build-config='cargo run --manifest-path /home/pika/Software/config-king/Cargo.toml -- directory=/home/pika/Config/config.lua'
 alias edit='cd /home/pika/Config'
 alias vi="nvim"
+alias vim="nvim"
+alias sudo="sudo "
