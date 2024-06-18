@@ -1,0 +1,14 @@
+<domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
+
+ <qemu:commandline>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=mouse1,evdev=/dev/input/by-id/usb-HUION_Huion_Tablet-event-mouse'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=mouse2,evdev=/dev/input/by-id/usb-Logitech_G502_HERO_Gaming_Mouse_117231463936-event-mouse'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=kbd1,evdev=/dev/input/by-id/usb-Logitech_G502_HERO_Gaming_Mouse_117231463936-if01-event-kbd,grab_all=on,repeat=on'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=kbd2,evdev=/dev/input/by-id/usb-SONiX_USB_DEVICE-event-kbd,grab_all=on,repeat=on'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=mouse3,evdev=/dev/input/by-id/usb-SONiX_USB_DEVICE-if01-event-mouse'/>
+  </qemu:commandline>

@@ -34,6 +34,7 @@
       }
     },
     "layer": "top",
+    "output": "DP-2",
     "margin-bottom": 0,
     "margin-left": 10,
     "margin-right": 10,

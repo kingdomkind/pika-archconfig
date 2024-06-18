@@ -19,6 +19,7 @@ Packages = {
         "pipewire-pulse",
         "wireplumber",
         "linux-headers",
+	"dkms",
         "dnsmasq",
         "wl-clipboard",
         "libvirt",
@@ -57,7 +58,6 @@ Packages = {
 	--> Simple AUR
 	"armcord-bin",
         "nvm", "vscodium",
-        "looking-glass",
         "librewolf-bin",
         "rofi-power-menu",
         "zapzap",
@@ -95,7 +95,6 @@ Symlinks = {
     ["/root/.config/nvim"] = "/home/pika/Config/neovim",
     ["/etc/mkinitcpio.conf"] = "/home/pika/Config/boot/mkinitcpio.conf",
     ["/etc/fstab"] = "/home/pika/Config/boot/fstab",
-    ["/etc/tmpfiles.d/10-looking-glass.conf"] = "/home/pika/Config/boot/10-looking-glass.conf",
     ["/home/pika/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
     ["/root/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
     ["/usr/share/grub/themes/sleek"] = "/home/pika/Config/boot/sleek",
