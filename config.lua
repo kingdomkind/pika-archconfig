@@ -5,8 +5,9 @@ Packages = {
         "base-devel",
         "git",
         "grub",
-        "linux",
-        "linux-firmware",
+	"linux-zen", "linux-zen-headers",
+	"linux", "linux-headers", --> Fallback, has no ACS patch, use zen mainly
+	"linux-firmware",
         "networkmanager",
         "openssh",
         "amd-ucode",
@@ -52,6 +53,10 @@ Packages = {
 	"qbittorrent",
 	"neovim",
 	"nvtop",
+	"xdg-desktop-portal-hyprland",
+	"nautilus",
+	"gamescope",
+	"clang",
     },
 
     Aur = {
@@ -62,11 +67,9 @@ Packages = {
         "rofi-power-menu",
         "zapzap",
 	"satty-bin",
-	"hyprpicker",
-        "prismlauncher-qt5-bin",
         "freetube-bin",
 	"betterbird-bin",
-	"pop-icon-theme-git", "cosmic-icons-git", "cosmic-files-git",
+	--"pop-icon-theme-git", "cosmic-icons-git", "cosmic-files-git",
 	"jellyfin-media-player",
 
 	--> Advanced AUR
