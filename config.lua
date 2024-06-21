@@ -6,8 +6,12 @@ Packages = {
         "git",
         "grub",
 	"linux-zen", "linux-zen-headers",
-	"linux", "linux-headers", --> Fallback, has no ACS patch, use zen mainly
+	"linux", -- "linux-headers", --> Fallback, has no ACS patch, use zen mainly
 	"linux-firmware",
+	"zsh", -- The shell is ZSH for root
+	"zsh-syntax-highlighting",
+	"zsh-autosuggestions",
+	"zsh-history-substring-search",
         "networkmanager",
         "openssh",
         "amd-ucode",
@@ -48,14 +52,13 @@ Packages = {
         "virt-manager",
 	"element-desktop",
 	"steam",
-	"koko",
 	"vlc",
 	"qbittorrent",
 	"neovim",
 	"nvtop",
 	"xdg-desktop-portal-hyprland",
 	"nautilus",
-	"gamescope",
+	"mangohud",
 	"clang",
     },
 
@@ -69,8 +72,9 @@ Packages = {
 	"satty-bin",
         "freetube-bin",
 	"betterbird-bin",
-	--"pop-icon-theme-git", "cosmic-icons-git", "cosmic-files-git",
+	"zsh-theme-powerlevel10k-git",
 	"jellyfin-media-player",
+	"mirage",
 
 	--> Advanced AUR
 	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
@@ -98,8 +102,8 @@ Symlinks = {
     ["/root/.config/nvim"] = "/home/pika/Config/neovim",
     ["/etc/mkinitcpio.conf"] = "/home/pika/Config/boot/mkinitcpio.conf",
     ["/etc/fstab"] = "/home/pika/Config/boot/fstab",
-    ["/home/pika/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
-    ["/root/.bashrc"] = "/home/pika/Config/scripts/bash/bashrc",
+    ["/home/pika/.zshrc"] = "/home/pika/Config/zshrc",
+    ["/root/.zshrc"] = "/home/pika/Config/zshrc",
     ["/usr/share/grub/themes/sleek"] = "/home/pika/Config/boot/sleek",
 }
 

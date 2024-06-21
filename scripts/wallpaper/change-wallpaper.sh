@@ -20,7 +20,7 @@ if [ "$XDG_CURRENT_DESKTOP" == "Hyprland" ]; then
 	echo "$WALLPAPER" > "$WALLPAPER_FILE"
 
 	FINAL="$SCRIPT_DIRECTORY/pictures/$WALLPAPER"
-	wal -i "$FINAL"
+	wal -n "$FINAL"
 	hyprctl hyprpaper unload all
 	hyprctl hyprpaper preload "$FINAL"
 	hyprctl hyprpaper wallpaper "DP-2,$FINAL"
