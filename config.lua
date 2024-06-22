@@ -33,7 +33,7 @@ Packages = {
 	"noto-fonts",
 	"ttf-font-awesome",
 	"ttf-jetbrains-mono-nerd",
-	
+
         --> Apps
         "rustup",
         "flatpak",
@@ -72,9 +72,9 @@ Packages = {
 	"satty-bin",
         "freetube-bin",
 	"betterbird-bin",
-	"zsh-theme-powerlevel10k-git",
 	"jellyfin-media-player",
 	"mirage",
+	"nvim-lazy",
 
 	--> Advanced AUR
 	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
