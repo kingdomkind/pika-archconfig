@@ -17,6 +17,8 @@ window#waybar {
 #workspaces,
 #custom-system,
 #custom-nvidia,
+#custom-workspaceDP,
+#custom-workspaceHDMI,
 #clock {
   background-color: @background;
   margin-left: 5px;

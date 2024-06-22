@@ -15,6 +15,16 @@
       "format": "{}",
       "restart-interval": 1
     },
+    "custom/workspaceDP": {
+	"exec": "lua /home/pika/Config/scripts/workspaces/get-workspace.lua DP-2",
+	"format": "{}",
+	"restart-interval": 1
+    },
+    "custom/workspaceHDMI": {
+	"exec": "lua /home/pika/Config/scripts/workspaces/get-workspace.lua HDMI-A-1",
+	"format": "{}",
+	"restart-interval": 1
+    },
     "height": 20,
     "hyprland/window": {
       "format": "{class}"
@@ -42,6 +52,8 @@
     "modules-center": [],
     "modules-left": [
       "hyprland/workspaces",
+      "custom/workspaceDP",
+      "custom/workspaceHDMI",
       "hyprland/window"
     ],
     "modules-right": [
