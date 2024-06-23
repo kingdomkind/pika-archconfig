@@ -19,13 +19,14 @@ require("lazy").setup(
 	"williamboman/mason.nvim", -- Base LSP & Language Server Installer
 	"williamboman/mason-lspconfig.nvim", -- BRridges mason and lspconfig to allow them to be used together
 	"neovim/nvim-lspconfig", -- Allows you to configure LSPs & Language Servers
+--	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
 })
 
 --> Setup plugin installers
 require("mason").setup()
-require("mason-lspconfig").setup {
+require("mason-lspconfig").setup({
     ensure_installed = {"lua_ls", "rust_analyzer"}, -- Language Servers to be installed
-}
+})
 
 --> Setup language Servers
 require("lspconfig").lua_ls.setup({})
