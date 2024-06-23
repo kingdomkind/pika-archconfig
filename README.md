@@ -8,3 +8,4 @@ The subfolders are the following:
 - /scripts/wallpaper/pictures (License not in subfolder, they are just images I have found online)
 
 Everything is named pretty well, the /scripts folder contains the majority of configuration. Commonly access configs are instead located at the root instead (/).
+The scripts assume that the config folder is called "Config" and is located at /home/pika/Config.

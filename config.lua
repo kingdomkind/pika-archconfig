@@ -60,6 +60,7 @@ Packages = {
 	"nautilus",
 	"mangohud",
 	"clang",
+	"gamescope",
     },
 
     Aur = {
