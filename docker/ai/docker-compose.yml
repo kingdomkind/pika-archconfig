@@ -1,0 +1,16 @@
+# Runs ollama & open-webui
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:ollama
+    container_name: open-webui
+    ports:
+      - "3000:8080"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    volumes:
+      - /home/pika/Config/docker/volumes/ollama:/root/.ollama
+      - /home/pika/Config/docker/volumes/open-webui:/app/backend/data
+    restart: always

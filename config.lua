@@ -33,6 +33,8 @@ Packages = {
 	"noto-fonts",
 	"ttf-font-awesome",
 	"ttf-jetbrains-mono-nerd",
+	"nvidia-open-dkms",
+	"cuda",
 
         --> Apps
         "rustup",
@@ -47,7 +49,6 @@ Packages = {
         "signal-desktop",
         "rofi-wayland",
         "grim",
-        "slurp",
         "btop",
         "virt-manager",
 	"element-desktop",
@@ -61,6 +62,10 @@ Packages = {
 	"mangohud",
 	"clang",
 	"gamescope",
+	"ollama-cuda",
+	"macchanger",
+	"docker", "docker-compose", "nvidia-container-toolkit",
+	"ranger",
     },
 
     Aur = {
@@ -78,15 +83,12 @@ Packages = {
 	"nvim-lazy",
 
 	--> Advanced AUR
-	{["base"] = "nvidia-utils-beta", ["sub"] = {"nvidia-utils-beta", "opencl-nvidia-beta", "nvidia-settings-beta"}},
-	{["base"] = "nvidia-open-beta", ["sub"] = {"nvidia-open-beta-dkms"}},
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
     },
 
 
     Flatpak = {
         "com.github.IsmaelMartinez.teams_for_linux",
-	"org.jellyfin.JellyfinServer",
     },
 }
 
