@@ -9,7 +9,9 @@ services:
       resources:
         reservations:
           devices:
-            - capabilities: [gpu]
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     volumes:
       - /home/pika/Config/docker/volumes/ollama:/root/.ollama
       - /home/pika/Config/docker/volumes/open-webui:/app/backend/data

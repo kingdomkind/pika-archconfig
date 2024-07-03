@@ -62,10 +62,14 @@ Packages = {
 	"mangohud",
 	"clang",
 	"gamescope",
-	"ollama-cuda",
 	"macchanger",
 	"docker", "docker-compose", "nvidia-container-toolkit",
 	"ranger",
+	"weston",
+	"foot",
+	"cloc",
+	"jdk21-openjdk",
+	"gnome-multi-writer",
     },
 
     Aur = {
@@ -76,11 +80,9 @@ Packages = {
         "rofi-power-menu",
         "zapzap",
 	"satty-bin",
-        "freetube-bin",
-	"betterbird-bin",
 	"jellyfin-media-player",
-	"mirage",
 	"nvim-lazy",
+	"prismlauncher",
 
 	--> Advanced AUR
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
