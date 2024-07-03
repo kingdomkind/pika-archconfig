@@ -1,2 +1,8 @@
 scripts/wallpaper/wallpaper.txt
-docker/volumes/*
+#docker/volumes/*
+
+# Ignore all files in subfolders
+docker/volumes/*/*
+
+# Un-ignore the subfolders themselves
+!docker/volumes/*/

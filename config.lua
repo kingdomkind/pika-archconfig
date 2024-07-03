@@ -25,7 +25,7 @@ Packages = {
         "wireplumber",
         "linux-headers",
 	"dkms",
-        "dnsmasq",
+	"dnsmasq",
         "wl-clipboard",
         "libvirt",
         "qemu-full",
