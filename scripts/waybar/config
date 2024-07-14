@@ -29,20 +29,6 @@
     "hyprland/window": {
       "format": "{class}"
     },
-    "hyprland/workspaces": {
-      "active-only": false,
-      "all-outputs": true,
-      "format": "{}",
-      "format-icons": {
-        "active": "",
-        "default": "",
-        "urgent": ""
-      },
-      "on-click": "activate",
-      "persistent-workspaces": {
-        "*": 5
-      }
-    },
     "layer": "top",
     "output": "DP-2",
     "margin-bottom": 0,
@@ -51,7 +37,6 @@
     "margin-top": 10,
     "modules-center": [],
     "modules-left": [
-      "hyprland/workspaces",
       "custom/workspaceDP",
       "custom/workspaceHDMI",
       "hyprland/window"

@@ -14,7 +14,6 @@ window#waybar {
 #tray,
 #network,
 #window,
-#workspaces,
 #custom-system,
 #custom-nvidia,
 #custom-workspaceDP,
@@ -24,7 +23,7 @@ window#waybar {
   margin-left: 5px;
   margin-right: 5px;;
   border: 2px solid @color11;
-  padding: 2px 15px;
+  padding: 7px 15px;
   color: #ffffff;
 }
 

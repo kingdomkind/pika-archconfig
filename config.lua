@@ -6,7 +6,6 @@ Packages = {
         "git",
         "grub",
 	"linux-zen", "linux-zen-headers",
-	"linux", -- "linux-headers", --> Fallback, has no ACS patch, use zen mainly
 	"linux-firmware",
 	"zsh", -- The shell is ZSH for root
 	"zsh-syntax-highlighting",
@@ -69,7 +68,6 @@ Packages = {
 	"foot",
 	"cloc",
 	"jdk21-openjdk",
-	"gnome-multi-writer",
     },
 
     Aur = {
