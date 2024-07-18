@@ -21,7 +21,7 @@
 	"restart-interval": 1
     },
     "custom/workspaceHDMI": {
-	"exec": "lua /home/pika/Config/scripts/workspaces/get-workspace.lua HDMI-A-1",
+	"exec": "lua /home/pika/Config/scripts/workspaces/get-workspace.lua DP-3",
 	"format": "{}",
 	"restart-interval": 1
     },

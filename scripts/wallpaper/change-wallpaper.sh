@@ -24,7 +24,7 @@ if [ "$XDG_CURRENT_DESKTOP" == "Hyprland" ]; then
 	hyprctl hyprpaper unload all
 	hyprctl hyprpaper preload "$FINAL"
 	hyprctl hyprpaper wallpaper "DP-2,$FINAL"
-	hyprctl hyprpaper wallpaper "HDMI-A-1, $FINAL"
+	hyprctl hyprpaper wallpaper "DP-3, $FINAL"
 	killall -SIGUSR2 waybar
 	pkill dunst
 	mkdir -p /home/pika/.config/dunst

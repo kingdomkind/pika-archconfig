@@ -60,14 +60,14 @@ Packages = {
 	"nautilus",
 	"mangohud",
 	"clang",
-	"gamescope",
 	"macchanger",
 	"docker", "docker-compose", "nvidia-container-toolkit",
 	"ranger",
 	"weston",
-	"foot",
 	"cloc",
 	"jdk21-openjdk",
+	"xorg-server",
+	"xorg-xinit",
     },
 
     Aur = {
