@@ -76,6 +76,7 @@ Packages = {
 	"nvim-lazy",
 	"prismlauncher",
 	"picom-git",
+	"brave-bin",
 
 	--> Advanced AUR
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
