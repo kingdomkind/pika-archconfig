@@ -30,7 +30,6 @@ Packages = {
         "qemu-full",
 	"ntfs-3g",
 	"noto-fonts",
-	"ttf-font-awesome",
 	"ttf-jetbrains-mono-nerd",
 	"nvidia-open-dkms", "nvidia-settings",
 	"cuda",
@@ -39,18 +38,15 @@ Packages = {
         --> Apps
         "rustup",
         "fastfetch",
-        "kitty",
         "dunst",
         "signal-desktop",
         "rofi-wayland",
-        "grim",
         "btop",
         "virt-manager",
 	"element-desktop",
 	"qbittorrent",
 	"neovim",
 	"nvtop",
-	"mangohud",
 	"clang",
 	"macchanger",
 	"docker", "docker-compose", "nvidia-container-toolkit",
@@ -63,7 +59,11 @@ Packages = {
 	"flameshot",
 	"meson",
 	"xorg-xrandr",
-	"thunar",
+	"alacritty",
+	"feh",
+	"firefox",
+	"python-pywal",
+	"xclip",
     },
 
     Aur = {
@@ -76,7 +76,6 @@ Packages = {
 	"nvim-lazy",
 	"prismlauncher",
 	"picom-git",
-	"librewolf-bin",
 
 	--> Advanced AUR
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
@@ -91,7 +90,8 @@ Packages = {
 
 Symlinks = {
     ["/etc/default/grub"] = "/home/pika/Config/boot/grub",
-    ["/home/pika/.config/kitty/kitty.conf"] = "/home/pika/Config/scripts/kitty/kitty.conf",
+    ["/home/pika/.config/picom/picom.conf"] = "/home/pika/Config/picom.conf",
+    ["/home/pika/.config/alacritty/alacritty.toml"] = "/home/pika/Config/scripts/alacritty/alacritty.toml",
     ["/home/pika/.config/rofi/config.rasi"] = "/home/pika/Config/scripts/rofi/config.rasi",
     ["/home/pika/.config/wal/templates/dunstrc"] = "/home/pika/Config/scripts/dunst/dunstrc",
     ["/home/pika/.config/nvim"] = "/home/pika/Config/neovim",
@@ -132,4 +132,6 @@ function HookPost()
 	else
 		print("Failed to grep any results for default! (virsh network)")
 	end
+
+	os.execute("/home/pika/Config/firefox/setuserjs.sh")
 end
