@@ -29,7 +29,7 @@ Packages = {
         "libvirt",
         "qemu-full",
 	"ntfs-3g",
-	"noto-fonts",
+	"noto-fonts", "noto-fonts-emoji",
 	"ttf-jetbrains-mono-nerd",
 	"nvidia-open-dkms", "nvidia-settings",
 	"cuda",
@@ -43,7 +43,6 @@ Packages = {
         "rofi-wayland",
         "btop",
         "virt-manager",
-	"element-desktop",
 	"qbittorrent",
 	"neovim",
 	"nvtop",
@@ -51,7 +50,6 @@ Packages = {
 	"macchanger",
 	"docker", "docker-compose", "nvidia-container-toolkit",
 	"ranger",
-	"cloc",
 	"jdk21-openjdk",
 	"xorg-server",
 	"xorg-xinit",
@@ -61,22 +59,26 @@ Packages = {
 	"xorg-xrandr",
 	"alacritty",
 	"feh",
-	"firefox",
 	"python-pywal",
 	"xclip",
+	"bitwarden",
+	"npm",
+	"telegram-desktop",
+	"audacity",
+	"movit",
+	"kdenlive",
     },
 
     Aur = {
 	--> Simple AUR
-	"armcord-bin",
         "nvm", "vscodium",
         "zapzap",
-	"satty-bin",
 	"jellyfin-media-player",
 	"nvim-lazy",
 	"prismlauncher",
 	"picom-git",
 	"brave-bin",
+	"davinci-resolve",
 
 	--> Advanced AUR
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
@@ -133,6 +135,4 @@ function HookPost()
 	else
 		print("Failed to grep any results for default! (virsh network)")
 	end
-
-	os.execute("/home/pika/Config/firefox/setuserjs.sh")
 end

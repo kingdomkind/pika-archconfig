@@ -8,6 +8,9 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
+# Set Vars
+EDITOR=nvim
+
 # Vim keybindings
 bindkey -v
 
@@ -24,6 +27,11 @@ alias edit='cd /home/pika/Config'
 alias vim="nvim"
 alias vi="nvim"
 alias sudo="sudo "
+alias exert="/home/pika/Software/exert/run.sh"
+alias up="sudo vpn_handler up"
+alias down="sudo vpn_handler down"
+alias phone="sudo macchanger -r enp9s0f3u3; nmcli con up 'Wired connection 2'&& nmcli con down 'Wired connection 1'"
+alias desktop="nmcli con up 'Wired connection 1' && nmcli con down 'Wired connection 2'"
 
 # Enable syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

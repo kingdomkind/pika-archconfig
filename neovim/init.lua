@@ -24,10 +24,11 @@ require("lazy").setup(
 --> Setup plugin installers
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {"lua_ls", "rust_analyzer", "clangd"}, -- Language Servers to be installed
+    ensure_installed = {"lua_ls", "rust_analyzer", "clangd", "bashls"}, -- Language Servers to be installed
 })
 
 --> Setup language Servers
 require("lspconfig").lua_ls.setup({})
 require("lspconfig").rust_analyzer.setup({})
 require("lspconfig").clangd.setup({})
+require("lspconfig").bashls.setup({})
