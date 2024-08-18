@@ -76,7 +76,7 @@ Packages = {
 	"jellyfin-media-player",
 	"nvim-lazy",
 	"prismlauncher",
-	"picom-git",
+	"picom-pijulius-git",
 	"brave-bin",
 	"davinci-resolve",
 
