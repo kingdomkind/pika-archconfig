@@ -32,6 +32,9 @@ alias up="sudo vpn_handler up"
 alias down="sudo vpn_handler down"
 alias phone="sudo macchanger -r enp9s0f3u3; nmcli con up 'Wired connection 2'&& nmcli con down 'Wired connection 1'"
 alias desktop="nmcli con up 'Wired connection 1' && nmcli con down 'Wired connection 2'"
+alias decrypt="sudo cryptsetup open /dev/sdc2 Secure && sudo mount /dev/mapper/Secure /home/pika/Documents/Secure"
+alias encrypt="sudo umount /home/pika/Documents/Secure && sudo cryptsetup close Secure"
+alias space="df -h | grep \"^/dev\|Filesystem\""
 
 # Enable syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -34,6 +34,7 @@ Packages = {
 	"nvidia-open-dkms", "nvidia-settings",
 	"cuda",
 	"libnotify",
+	"cryptsetup",
 
         --> Apps
         "rustup",
@@ -61,12 +62,12 @@ Packages = {
 	"feh",
 	"python-pywal",
 	"xclip",
-	"bitwarden",
 	"npm",
 	"telegram-desktop",
 	"audacity",
 	"movit",
 	"kdenlive",
+	"monero",
     },
 
     Aur = {
@@ -78,7 +79,7 @@ Packages = {
 	"prismlauncher",
 	"picom-pijulius-git",
 	"brave-bin",
-	"davinci-resolve",
+	"librewolf-bin",
 
 	--> Advanced AUR
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
