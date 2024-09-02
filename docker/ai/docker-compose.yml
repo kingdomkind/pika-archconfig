@@ -15,4 +15,4 @@ services:
     volumes:
       - /home/pika/Config/docker/volumes/ollama:/root/.ollama
       - /home/pika/Config/docker/volumes/open-webui:/app/backend/data
-    restart: always
+    restart: unless-stopped
