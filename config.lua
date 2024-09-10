@@ -68,6 +68,9 @@ Packages = {
 	"movit",
 	"kdenlive",
 	"monero",
+	"lutris",
+	"system-config-printer",
+	"bind",
     },
 
     Aur = {
@@ -77,9 +80,9 @@ Packages = {
 	"jellyfin-media-player",
 	"nvim-lazy",
 	"prismlauncher",
-	"picom-pijulius-git",
+	"picom-git",
 	"brave-bin",
-	"librewolf-bin",
+	"epson-inkjet-printer-escpr",
 
 	--> Advanced AUR
 	{["base"] = "Rust-VPN-Handler", ["sub"] = {"vpn_handler"}, ["url"] = "https://github.com/kingdomkind/Rust-VPN-Handler.git"},
